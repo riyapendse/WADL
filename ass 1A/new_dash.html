@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - My Site</title>
+  <link rel="stylesheet" type ="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+    /* Sidebar */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 16px;
+      color: #000;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+    .sidebar .active {
+      background-color: #60416e;
+      color: white;
+    }
+    /* Content */
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card-header {
+      background-color: #302640;
+      color: white;
+      font-size: 20px;
+    }
+
+    .table{
+      padding-left:30px;
+      padding-top:10px;
+      font-size: 20px;
+    }
+
+    .table td{
+      padding-left: 100px;
+      padding-right: 100px;
+      border: 2px solid;
+    }
+
+    tr:nth-child(odd) {background-color:#c5c5c5;}
+    
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a class="active" href="#">Dashboard</a>
+    <a href="#">Orders</a>
+    <a href="#">Customers</a>
+    <a href="#">Products</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="content">
+    <h2>My Sales Dashboard</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Total Orders
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">500</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Total Customers
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">1000</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Total Products
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">200</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="table">
+        <table>
+          <tr>
+            <td>Sr. No</td>
+            <td>Date</td>
+            <td>Name</td>
+            <td>Purchase</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>17/02/23</td>
+            <td>Riya Pendse</td>
+            <td>Rs. 2000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>17/02/23</td>
+            <td>Aman Prabhune</td>
+            <td>Rs. 4500</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>18/02/23</td>
+            <td>Sagar Gokhale</td>
+            <td>Rs. 820</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>18/02/23</td>
+            <td>Sarthak Bindal</td>
+            <td>Rs. 13,080</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>18/02/23</td>
+            <td>Yashraj Thakur</td>
+            <td>Rs. 60</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>19/02/23</td>
+            <td>Rohit Kulkarni</td>
+            <td>Rs. 1260</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
+
